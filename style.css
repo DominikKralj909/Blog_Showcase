@@ -1,0 +1,150 @@
+:root {
+	font-family: 'Barlow Condensed', sans-serif;
+	--primary-black: #00000;
+	
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+header {
+	padding: 0 1rem;
+}
+
+.blog-showcase-header {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 2.1875rem;
+}
+
+.blog-showcase-header h1 {
+	text-transform: uppercase;
+	line-height: 1.1;
+	font-size: 2.25rem;
+	margin-bottom: 0;
+	margin-top: 4rem;
+	color: var(--primary-black);
+}
+
+.blog-showcase-header p {
+	line-height: 1.3;
+	font-size: 1.25rem;
+	text-align: center;
+	font-family: 'Rajdhani';
+	color: var(--primary-black);
+}
+
+.blog-showcase-header a {
+	font-weight: 600;
+	font-size: 1.125rem;
+	text-transform: uppercase;
+	text-decoration: underline;
+	cursor: pointer;
+	color: var(--primary-black);
+}
+
+.blog-showcase-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0 2.21875rem;
+	gap: 2rem;
+}
+
+.blog-showcase-wrapper img {
+	clip-path: circle(50% at 50% 50%);
+}
+
+.blog-showcase-item-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+.blog-showcase-item-wrapper h3 {
+	text-align: center;
+	font-size: 1.5rem;
+	line-height: 1.1;
+	text-transform: uppercase;
+	color: var(--primary-black);
+	margin: 0;
+}
+
+.blog-showcase-item-wrapper:last-child {
+	margin-bottom: 4rem;
+}
+
+.blog-showcase-image-wrapper {
+	position: relative;
+}
+
+.blog-showcase-image-graphic {
+	position: absolute;
+}
+
+.blog-showcase-image-graphic-top-left {
+	bottom: 7.1875rem;
+	right: 12.5rem;
+}
+
+.blog-showcase-image-graphic-top-right {
+	bottom: 11.1875rem;
+	left: 9.5rem;
+	z-index: -1;
+}
+
+.blog-showcase-image-graphic-bottom-left {
+	right: 11rem;
+    top: 13rem;
+	z-index: -1;
+}
+
+.blog-showcase-image-graphic-bottom-right {
+    top: 13rem;
+	left: 9.5rem;
+	z-index: -1;
+}
+
+
+/* Extra-large desktops */
+@media (min-width: 1440px) {
+	.blog-showcase-header h1 {
+		line-height: 3.75rem;
+		font-size: 3.375rem;
+	}
+
+	.blog-showcase-header p {
+		line-height: 1.9375rem;
+		font-size: 1.5rem;
+	}
+
+	.blog-showcase-header a {
+		font-weight: 1,625rem;
+		font-size: 1.25rem;
+	}
+
+	.blog-showcase-item-wrapper h3 {
+		font-size: 2.25rem;
+	}
+
+	.blog-showcase-wrapper {
+		flex-direction: row;
+		align-items: baseline;
+	}
+}
+
+
+
+
+
